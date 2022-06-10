@@ -1,6 +1,6 @@
 /* GLOBAL VARIABLES */
 :root {
-  --font: "Roboto", sans-serif;
+  --font: "Arial Rounded MT Bold", sans-serif;
   --fontOrigin: 1rem;     /* 16px */
   --fontSmall: 0.625em;   /* 10px */
   --fontMedium: 0.875em;  /* 14px */
@@ -9,6 +9,13 @@
   --fontLight: 100;
   --fontRegular: 400;
   --speed: 0.65s;
+  --headline-gradient-start: #194BB5;
+  --headline-gradient-end: #009DE4;
+  --headline-gradient-shimmer: #5AC8FA;
+  --gradient-highlight-spread: 20%;
+  --gradient-shimmer-angle: 100deg;
+  --gradient-position-start: 140;
+  --gradient-position-end: -40;
 }
 
 @keyframes zoom {
@@ -45,7 +52,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.005rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  font-smoothing: subpixel-antialiased;
 }
 
 .wrapper {
@@ -113,8 +119,8 @@ body {
   overflow: hidden;
   display: block;
   width: 100%;
-  max-width: 250px;
-  height: 400px;
+  max-width: 350px;
+  height: 550px;
   font-size: var(--fontOrigin);
   border-radius: 8px;
   box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);
@@ -214,7 +220,7 @@ body {
 .card__header {
   display: grid;
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
 
 .card__profile {
@@ -224,9 +230,9 @@ body {
   overflow: hidden;
   width: 10vmax;
   height: 10vmax;
-  max-width: 100px;
-  max-height: 100px;
-  border-radius: 50%;
+  max-width: 300px;
+  max-height: 200px;
+  border-radius: 20%;
 }
 
 .card__profile img {
@@ -260,14 +266,16 @@ body {
   align-self: center;
   justify-self: center;
   margin-bottom: 2px;
-  color: white;
-  font-size: var(--fontLarge);
-  font-weight: var(--fontLight);
+  color: #ffffff7b;
+  font-size: 1.5em;
+  font-weight: bold;
   letter-spacing: 0.1rem;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-  background: -webkit-linear-gradient(white, #a1a1a1);
+  text-shadow: 0 1px 1px #ffffff28;
+  margin-bottom: 10px;
+  background: linear-gradient(100deg, #5AC8FA, #009DE4, #194BB5);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transition: all var(--speed) ease;
@@ -276,6 +284,7 @@ body {
 
 .card:hover .card__name {
   background: -webkit-linear-gradient(white, #c1c1c1);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -284,11 +293,12 @@ body {
   align-self: center;
   justify-self: center;
   display: inline-block;
-  font-size: var(--fontSmall);
-  font-weight: var(--fontLight);
+  font-size: 18px;
+  font-weight: bolder;
   text-align: center;
-  letter-spacing: 0.35rem;
-  color: rgba(100, 130, 200, 0.45);
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(151, 151, 151, 0.5);
   -webkit-transition: all var(--speed) ease;
   transition: all var(--speed) ease;
 }
