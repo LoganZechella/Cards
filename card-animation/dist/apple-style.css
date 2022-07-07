@@ -1,72 +1,80 @@
-backdrop-filter: saturate(180%) blur(20px);
+body {
+        background-image: radial-gradient(at 100% 100%, rgba(111, 88, 116, 0.7) 0px, transparent 50%), radial-gradient(at 90% 0%, #0a2961 0px, transparent 50%), radial-gradient(at 18% 16%, rgba(58, 3, 130, 0.79) 0px, transparent 50%), radial-gradient(at 100% 40%, rgba(76, 21, 147, 0.22) 0px, transparent 50%), radial-gradient(at 0% 100%, #74517b 0px, transparent 50%);
+        backdrop-filter: saturate(180%) blur(20px);
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: auto;
+}
 
+/* From DevTools: 
+
+--r-globalnav-height: 44px;
+--r-globalnav-segmentbar-height: 0px;
+--r-globalnav-viewport-large-min-width: 1024px;
+--r-globalnav-viewport-large-max-width: 1441px;
+--r-globalnav-viewport-large-query: (min-width: 1024px);
+--r-globalnav-viewport-medium-min-width: 834px;
+--r-globalnav-viewport-medium-max-width: 1023px;
+--r-globalnav-viewport-medium-query: (max-width: 1023px);
+--r-globalnav-viewport-small-min-width: 420px;
+--r-globalnav-viewport-small-max-width: 833px;
+--r-globalnav-viewport-small-query: (max-width: 833px);
+--r-globalnav-viewport-xsmall-min-width: 320px;
+--r-globalnav-viewport-xsmall-max-width: 419px;
+--r-globalnav-viewport-xsmall-query: (max-width: 419px);
+--r-globalnav-segmentbar-text-color: rgba(255, 255, 255, 0.92);
+--r-globalnav-segmentbar-border-color: rgba(255, 255, 255, 0.24);
+--r-globalnav-segmentbar-background: #424245;
+-webkit-text-size-adjust: 100%;
+quotes: "“""”";
+--r-localnav-stacked-height: 66px;
+--r-localnav-gn-height: var(--r-globalnav-height, 44px);
+--r-localnav-viewport-large-min-width: 1024px;
+--r-localnav-viewport-large-query: (min-width: 1024px);
+--r-localnav-viewport-medium-min-width: 834px;
+--r-localnav-viewport-medium-max-width: 1023px;
+--r-localnav-viewport-medium-query: (min-width: 834px);
+--r-localnav-viewport-small-min-width: 320px;
+--r-localnav-viewport-small-max-width: 833px;
+--r-localnav-viewport-small-query: (min-width: 320px);
+--tile-border-radius: 30px;
+--tile-padding: 40px;
+--tile-content-margin: 52px;
+--grid-gutter: 25px;
+--tile-copy-margin-top: 0.77em;
+--r-localnav-height: 66px;
+font-size: 17px;
+line-height: 1.47059;
+font-weight: 400;
+letter-spacing: -.022em;
+font-family: "SF Pro Text",
+"SF Pro Icons",
+"Helvetica Neue",
+"Helvetica",
+"Arial",
+sans-serif;
+font-style: normal;
+font-synthesis: none;
+-webkit-font-smoothing: antialiased;
+direction: ltr;
+text-align: left;
+grid-column: span 12;
+display: flex;
+flex-direction: column;
+position: relative;
+z-index: 0;
+box-sizing: border-box;
+overflow: hidden;
+color: #fff;
+min-height: 720px;
 background-color: #000;
 background-image: radial-gradient(at 100% 100%, rgba(111, 88, 116, 0.7) 0px, transparent 50%),
-radial-gradient(at 90% 0%, #0a2961 0px, transparent 50%), radial-gradient(at 18% 16%, rgba(58, 3, 130, 0.79) 0px, transparent 50%), radial-gradient(at 100% 40%, rgba(76, 21, 147, 0.22) 0px, transparent 50%), radial-gradient(at 0% 100%, #74517b 0px, transparent 50%);
-
-
-        --r-globalnav-height: 44px;
-        --r-globalnav-segmentbar-height: 0px;
-        --r-globalnav-viewport-large-min-width: 1024px;
-        --r-globalnav-viewport-large-max-width: 1441px;
-        --r-globalnav-viewport-large-query: (min-width: 1024px);
-        --r-globalnav-viewport-medium-min-width: 834px;
-        --r-globalnav-viewport-medium-max-width: 1023px;
-        --r-globalnav-viewport-medium-query: (max-width: 1023px);
-        --r-globalnav-viewport-small-min-width: 420px;
-        --r-globalnav-viewport-small-max-width: 833px;
-        --r-globalnav-viewport-small-query: (max-width: 833px);
-        --r-globalnav-viewport-xsmall-min-width: 320px;
-        --r-globalnav-viewport-xsmall-max-width: 419px;
-        --r-globalnav-viewport-xsmall-query: (max-width: 419px);
-        --r-globalnav-segmentbar-text-color: rgba(255, 255, 255, 0.92);
-        --r-globalnav-segmentbar-border-color: rgba(255, 255, 255, 0.24);
-        --r-globalnav-segmentbar-background: #424245;
-        -webkit-text-size-adjust: 100%;
-        quotes: "“""”";
-        --r-localnav-stacked-height: 66px;
-        --r-localnav-gn-height: var(--r-globalnav-height, 44px);
-        --r-localnav-viewport-large-min-width: 1024px;
-        --r-localnav-viewport-large-query: (min-width: 1024px);
-        --r-localnav-viewport-medium-min-width: 834px;
-        --r-localnav-viewport-medium-max-width: 1023px;
-        --r-localnav-viewport-medium-query: (min-width: 834px);
-        --r-localnav-viewport-small-min-width: 320px;
-        --r-localnav-viewport-small-max-width: 833px;
-        --r-localnav-viewport-small-query: (min-width: 320px);
-        --tile-border-radius: 30px;
-        --tile-padding: 40px;
-        --tile-content-margin: 52px;
-        --grid-gutter: 25px;
-        --tile-copy-margin-top: 0.77em;
-        --r-localnav-height: 66px;
-        font-size: 17px;
-        line-height: 1.47059;
-        font-weight: 400;
-        letter-spacing: -.022em;
-        font-family: "SF Pro Text",
-        "SF Pro Icons",
-        "Helvetica Neue",
-        "Helvetica",
-        "Arial",
-        sans-serif;
-        font-style: normal;
-        font-synthesis: none;
-        -webkit-font-smoothing: antialiased;
-        direction: ltr;
-        text-align: left;
-        grid-column: span 12;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        z-index: 0;
-        box-sizing: border-box;
-        overflow: hidden;
-        color: #fff;
-        min-height: 720px;
-        background-color: #000;
-        background-image: radial-gradient(at 100% 100%, rgba(111, 88, 116, 0.7) 0px, transparent 50%),
-        radial-gradient(at 90% 0%, #0a2961 0px, transparent 50%),
-        radial-gradient(at 18% 16%, rgba(58, 3, 130, 0.79) 0px, transparent 50%),
-        radial-gradient(at 100% 40%, rgba(76, 21, 147, 0.22) 0px, transparent 50%),
-        radial-gradient(at 0% 100%, #74517b 0px, transparent 50%);
+radial-gradient(at 90% 0%, #0a2961 0px, transparent 50%),
+radial-gradient(at 18% 16%, rgba(58, 3, 130, 0.79) 0px, transparent 50%),
+radial-gradient(at 100% 40%, rgba(76, 21, 147, 0.22) 0px, transparent 50%),
+radial-gradient(at 0% 100%, #74517b 0px, transparent 50%);
+*/
